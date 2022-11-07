@@ -1,0 +1,316 @@
+* {margin: 0; padding: 0;}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.top {
+    height: 768px;
+    background: linear-gradient(0deg,
+    #EBF3FB 8.84%, 
+    rgba(152, 195, 232, 0) 31.12%)
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+}
+
+.textProject {
+    width: 75%;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #222222;
+    margin: 32px auto 64px;
+    opacity: 1;
+}
+
+.textTopInfo {
+    width: 425px;
+}
+
+.textTopFooterContent {
+    width: 495px;
+}
+
+.h1 {
+    font-size: 64px;
+    color: #1F3F68;
+    width: 510px;
+    font-weight: 300;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+}
+
+.topInfo {
+    padding-top: 115px;
+    flex-grow: 1;
+    background-image: url(img/top_back.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.topBox {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.topButton {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    padding: 15px 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 71px;
+}
+
+.h2 {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.what-we-do {
+    padding-top: 64px;
+}
+
+.h3 {
+    font-size: 36px;
+    text-align: center;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    font-weight: 300;
+}
+
+.h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin-bottom: 14px;
+}
+
+/* поля ввода */
+.enter {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.button {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.header {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 42px;
+}
+
+.centerTriple {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.blockTriple {
+    width: 359px;
+    padding: 44px 32px;
+    box-sizing: border-box;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.tripleImg {
+    align-self: center;
+    margin-bottom: 51px;
+}
+
+.triple_link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+    text-decoration: none;
+}
+
+.imgTriple {
+    justify-content: center;
+}
+
+.project {
+    /* empty */
+}
+
+.projectParent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.projectImg {
+    width: 100%;
+}
+
+.projectItem {
+    position: relative;
+    flex-grow: 1;
+}
+
+.projectItem_1 {
+    margin-right: 32px;
+}
+
+.projectText {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 64px;
+}
+
+.projectTextBig {
+    right: 64px;
+}
+
+.projectTextMin {
+    font-size: 28px;
+    top: 32px;
+    left: 32px;
+}
+
+.footer {
+    background: #316099;
+    margin-top: 112px;
+}
+
+.topFooter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerHeader {
+    color: #FFFFFF;
+    text-align: left;
+    padding-top: 91px;
+    margin-bottom: 32px;
+}
+
+.textTopFooterContent {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.6;
+    margin-bottom: 96px;
+}
+
+.topFooterContent {
+    width: 340px;
+}
+
+.footerButton {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #5A98D0;
+    padding: 15px 80px;
+    text-decoration: none;
+    display: inline-block;
+    align-self: center;
+}
+
+.hr {
+    opacity: 0.4;
+    border: 1px solid #FFFFFF;
+    margin-bottom: 64px;
+}
+
+/* .downFooter ul {  так было на предыдущем уроке
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* .downFooter ol {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.footerTextOl {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding: 0;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerTextOl li {
+    padding-left: 19px;
+    flex-grow: 1;
+    width: 33%;
+}
+
+.li_2 {
+    margin-left: 120px;
+}
+
+.copyrightText {
+    color: #FFFFFF;
+    opacity: 0.4;
+    padding: 64px 0px;
+}
+
+.centerContacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    flex-direction: column;
+}
