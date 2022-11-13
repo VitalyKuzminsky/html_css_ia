@@ -1,12 +1,12 @@
 * {margin: 0; padding: 0;}
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
 .top {
-    height: 768px;
+    min-height: 768px;
     background: linear-gradient(0deg,
     #EBF3FB 8.84%, 
     rgba(152, 195, 232, 0) 31.12%)
@@ -58,6 +58,7 @@ body {
     background-image: url(img/top_back.png);
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: 44%;
 }
 
 .topBox {
@@ -173,10 +174,6 @@ body {
     justify-content: center;
 }
 
-.project {
-    /* empty */
-}
-
 .projectParent {
     display: flex;
     justify-content: space-between;
@@ -263,8 +260,17 @@ body {
 
 .hr {
     opacity: 0.4;
-    border: 1px solid #FFFFFF;
-    margin-bottom: 64px;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    width: 100vw;
+    right: 0px;
+    position: absolute;
+}
+
+.downFooter {
+    padding-top: 64px;
 }
 
 /* .downFooter ul {  так было на предыдущем уроке
@@ -313,4 +319,210 @@ body {
 
 .form {
     flex-direction: column;
+}
+
+/* CSS для планшета от 768 до 1024px */
+
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .topInfo {
+        background-position: right 180px;
+    }
+
+    .centerTriple {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blockTriple {
+        margin-bottom: 32px;
+    }
+
+    .topFooter {
+        padding-left: 92px;
+        padding-right: 92px;
+    }
+
+    .footerHeader {
+        padding-top: 47px;
+    }
+
+    .textTopFooterContent {
+        width: 336px;
+        margin-bottom: 64px;
+    }
+
+    .footerButton {
+        padding: 4px 30px;
+    }
+
+    .footerTextOl {
+        margin-left: 110px;
+        margin-right: 92px;
+        padding-bottom: 0px;
+        display: block;
+    }
+
+    .footerTextOl li {
+        padding-left: 45px;
+        padding-bottom: 24px;
+        width: auto;
+    }
+
+    .li_2 {
+        margin-left: 0px;
+    }
+
+    .copyrightText {
+        color: #FFFFFF;
+        opacity: 0.4;
+        padding: 40px 92px 64px 92px;
+    }
+}
+
+/* CSS для мобильной версии до 767px */
+
+@media (max-width: 767px) {
+    .top {
+        min-height: 376px;
+        padding-bottom: 41px;
+        box-sizing: border-box;
+    }
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        padding-top: 24px;
+    }
+
+    .topInfo {
+        padding-top: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+    }
+
+    .h1 {
+        width: 100%;
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    .textTopInfo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .topButton {
+        font-size: 12px;
+        line-height: 26px;
+        padding: 0 8px;
+    }
+
+    .h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .what-we-do {
+        padding-top: 48px;
+    }
+
+    .centerTriple {
+        padding-top: 32px;
+    }
+
+    .blockTriple {
+        width: 100%;
+    }
+
+    .textProject {
+        width: 100%;
+    }
+
+    .projectText {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        right: 16px;
+        text-align: left;
+    }
+
+    .projectTextMin {
+        left: 16px;
+    }
+
+    .projectParent {
+        flex-direction: column;
+        margin-top: 16px;
+    }
+
+    .projectItem_1 {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    /* footer */
+
+    .footer {
+        margin-top: 62px;
+    }
+
+    .topFooter {
+        padding-left: 0px;
+        padding-right: 0px;
+        display: block;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .topFooterContent {
+        width: 100%;
+    }
+
+    .footerHeader {
+        padding-top: 18px;
+        padding-left: 16px;
+        padding-right: 16px;
+        text-align: center;
+    }
+
+    .textTopFooterContent {
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+        margin-bottom: 40px;
+    }
+
+    .downFooter {
+        padding-top: 32px;
+    }
+
+    .footerTextOl {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .footerTextOl li {
+        padding-left: 23px;
+    }
+
+    .copyright {
+        padding-bottom: 32px;
+    }
+
+    .copyrightText {
+        padding: 0;
+        text-align: center;
+    }
 }
